@@ -1,0 +1,55 @@
+.zwbox {
+    background-color: whitesmoke;
+    margin: 60px, 60px;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    border-radius: 10%;
+    position: center;
+}
+
+.zbbox {
+    background-color: rgb(22, 156, 239);
+    width: 350px;
+    display: block;
+    padding: 50px 50px;
+    margin: 160px 160px;
+    position: center;
+}
+
+.para {
+
+    font-size: large;
+    text-align: justify;
+}
+
+.zcircle {
+
+    float: left;
+}
+
+.zstar {
+    background-color: rgb(96, 72, 121);
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+
+    /* position: sticky; */
+    float: left;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.bout {
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+.but_submit {
+    position: center;
+
+}
