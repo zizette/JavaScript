@@ -1,3 +1,9 @@
+* {
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+}
+
 .zwbox {
     background-color: whitesmoke;
     margin: 60px, 60px;
@@ -32,7 +38,8 @@
     background-color: rgb(96, 72, 121);
     height: 25px;
     width: 25px;
-
+    padding: 5px;
+    margin: 0px 15px;
     border-radius: 50%;
 
     /* position: sticky; */
@@ -45,11 +52,19 @@ h1 {
 }
 
 .bout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px 20px;
     border-radius: 50%;
     border-width: 1px;
 }
 
-.but_submit {
-    position: center;
+#but_submit {
 
+    background-color: rgb(17, 17, 111);
+    color: white;
+    position: center;
+    width: 300px;
+    border-radius: 25%;
 }

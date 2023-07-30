@@ -25,26 +25,29 @@
             <p class="para">Please let us know how we did with your support request.<br> All feedback is appreciated
                 to help us improve our offering!</p>
             <div>
-                <form>
-                    <input class="bout" type="button" onclick=sayHello(1) value="1" />
-                    <input class="bout" type="button" onclick=sayHello(2) value="2" />
-                    <input class="bout" type="button" onclick=sayHello(3) value="3" />
-                    <input class="bout" type="button" onclick=sayHello(4) value="4" />
-                    <input class="bout" type="button" onclick=sayHello(5) value="5" />
-                    <input class="bout" type="button" onclick=sayHello(6) value="6" />
+                <form class="bout">
+                    <input type="button" onclick=sayHello(1) value="1" />
+                    <input type="button" onclick=sayHello(2) value="2" />
+                    <input type="button" onclick=sayHello(3) value="3" />
+                    <input type="button" onclick=sayHello(4) value="4" />
+                    <input type="button" onclick=sayHello(5) value="5" />
+                    <input type="button" onclick=sayHello(6) value="6" />
                 </form>
                 <br>
             </div> <!-- </div> white box end -->
             <!-- <button id="but_submit" type="button" onclick='window.alert("Your number is : ", x);'>SUBMIT</button> -->
-            <button id="but_submit" type="button" onclick='sayIt()'>SUBMIT</button>
+            <button id="but_submit" type="button" onclick=''>SUBMIT</button>
+            <p id="test" style="color: red;">test</p>
 
-            <p id="result"></p>
             <script>{
                     function sayHello(x) {
-                        alert("Your number is :  " + x);
+                        // alert("Your number is :  " + x);
+                        document.getElementById("test").innerHTML = x;
+                        message1 = `"Your number is ",${x}`;
+                        document.getElementById("but_submit").innerHTML = message1;
                         return x;
                     }
-                    function sayIt() { return (sayHello(any)); }
+
 
                 }
 
