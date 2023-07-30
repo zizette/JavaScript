@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <button id="btn">Click Me to show a dropdown ^</button>
+    <div id="main-div" class="style-1">
+      <a href="#"> about us</a>
+      <a href="#"> contact</a>
+      <a href="#"> portfolio</a>
+    </div>
+
+    <script>
+      let dropdownButton = document.getElementById("btn");
+      let dropdown = document.getElementById("main-div");
+      dropdownButton.addEventListener("click", function () {
+        dropdown.classList.toggle("hide-element")
+      });
+    </script>
+
+    <style>
+      .style-1 {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        width: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .hide-element {
+        display: none;
+      }
+
+      .style-1 a {
+        color: black;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+    </style>
+  </body>
+</html>
